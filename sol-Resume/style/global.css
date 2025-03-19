@@ -1,0 +1,131 @@
+
+.bodyCntr {
+    background-image: url("images2.jpg");
+    background-color: #1b1919; 
+}
+
+.padding {
+    padding-top: 20px; 
+    padding-right: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px; 
+}
+
+.main {
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 10px;
+}
+
+.nav {
+    background-color: #073241;
+    color: #ffffff;
+    padding: 10px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    min-width: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        display: none;
+    }
+}
+
+.mainbody {
+    background-color: #1b1b1b;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.HeaderOne {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.MyBio,
+.MySkills,
+.MyQualifications,
+.MyRef {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 60px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.MyBio {
+    background-color: #efeff0;
+}
+
+.MyQualifications {
+    background-color: #f0f0f0;
+}
+
+.MySkills {
+    background-color: #f0f0f0;
+}
+
+.MyRef {
+    background-color: #f1f2f3;
+}
+
+@media screen and (max-width: 500px) {
+    .MyBio, .MySkills, .MyQualification, .MyRef {
+        flex-direction: column;
+    }
+}
+
+
+
+body.dark-mode {
+    background-color: #000000;
+    color: white;
+}
+
+body.dark-mode .main {
+    background-color: #222222; 
+}
+
+body.dark-mode .nav {
+    background-color: #1a2a3d;
+}
+
+body.dark-mode section,
+body.dark-mode article {
+    background-color: #0c0c0c; 
+    color: white;
+}
+
+body.dark-mode button {
+     background-color: #020202;
+    color: white;
+    border: 1px solid #000000;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: white;
+}
+
+body.dark-mode section h2 {
+    background-color: #181717; 
+    color: white;
+}
+
+
+body.dark-mode button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
